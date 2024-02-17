@@ -1,0 +1,179 @@
+/* Estilos para el contenedor principal */
+body {
+    background-image: url('imgs/guitarras_fondo.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #1f1f23f1;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    display: inline-block;
+    align-items: center;
+}
+
+.caja {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+    margin-left: 20px;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(87, 86, 86, 0.411);
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: rgb(202, 246, 231);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+}
+
+nav li:hover a {
+    color: black;
+}
+
+/* Estilos footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+footer img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer p {
+    color: white;
+    margin-top: 10px;
+}
+
+/* Banner principal */
+#banner_principal {
+    position: relative;
+    text-align: center;
+}
+
+.banner {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+    background-color: rgba(240, 248, 255, 0.83);
+    text-align: center;
+    font-size: 8vw; /* Tamaño de fuente responsivo */
+    margin: 0.3em 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+section {
+    background-color: rgba(139, 139, 139, 0.709);
+    width: 80%;
+    margin: 10px auto;
+    padding: 3%;
+    border-radius: 15px;
+    clear: left;
+}
+
+#imagen_guitarra {
+    width: 120px;
+    float: left;
+    margin: 20px;
+}
+
+#contenedor_diferenciales {
+    width: 100%;
+}
+
+#lista_diferenciales {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#lista_diferenciales h3 {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.items_dif {
+    line-height: 1.5;
+}
+
+#imagen_steve {
+    width: 40%;
+}
+
+#info_mapa {
+    margin: 10px 0;
+}
+
+/* Media Query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Tamaño de fuente responsivo para pantallas pequeñas */
+    }
+
+    section {
+        width: 90%;
+    }
+
+    #lista_diferenciales {
+        width: 100%;
+    }
+
+    #imagen_guitarra {
+        width: 100%;
+    }
+
+    #imagen_steve {
+        width: 100%;
+    }
+}

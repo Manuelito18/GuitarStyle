@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarStyle</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styleProduc.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <img id="logo" src="imgs/GuitarStyle_negativo_T_corto.png" alt="">
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="contenedor_banner">
+        <img id="slash_baneerr" src="imgs/slash_banner.png" alt="Fotografia del famoso guitarrista de Guns and Roses posando con su iconico sombrero negro">
+        <p>¡Bienvenido a GuitarStyle! Somos tu destino definitivo para guitarras y accesorios de alta calidad. Nos enorgullece ofrecer una cuidadosa selección de marcas de renombre y modelos que garantizan un sonido excepcional y una durabilidad incomparable. Desde principiantes entusiastas hasta músicos profesionales como Slash, estamos aquí para satisfacer tus necesidades y ayudarte a alcanzar tus objetivos musicales. Explora nuestro catálogo en línea y únete a la familia GuitarStyle hoy mismo.</p>
+    </div>
+
+    <main>
+        <ul class="Productos">
+            <h1>GuitarStyle</h1>
+            <li>
+                <h2>Gibson Les Paul</h2>
+                <img src="imgs/gibson_les_paul.jpg" alt="">
+                <p>Potencia y elegancia fusionadas en cada acorde.</p>
+                <p><a href="#">Ver más</a></p>
+            </li>
+            <li>
+                <h2>Fender</h2>
+                <img src="imgs/fender.jpg" alt="">
+                <p>El sonido legendario que define generaciones.</p>
+                <p><a href="#">Ver más</a></p>
+            </li>
+            <li>
+                <h2>Acústica</h2>
+                <img src="imgs/Acustica.jpg" alt="">
+                <p>Melodías cálidas que inspiran el alma.</p>
+                <p><a href="#">Ver más</a></p>
+            </li>
+            <li>
+                <h2>Jackson</h2>
+                <img src="imgs/jascons.jpg" alt="">
+                <p>Velocidad y precisión para desatar tu poder musical.</p>
+                <p><a href="#">Ver más</a></p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <img src="imgs/GuitarStyle_negativo_T.png" alt="GuitarStyle">
+        <p>Copitn GuitarStyle</p>
+    </footer>
+    
+    <!-- SCRIP PARA LOS LINKs -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuItems = document.querySelectorAll('#menu li');
+            menuItems.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    var link = this.querySelector('a').getAttribute('href');
+                    window.location.href = link;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- Etiquetas de HTML
+<br>salto de linea lo pones al final noma
+<address>
+    Av. Atuhualpa #413 <br>
+    chosica del norte <br>
+    La victoria chiclayo <br>
+</address>
+
+Etiqueta Map y area 
+Se usa cuando en una imagen quiero que al darle click en una determinada area se valla a un lado puede ser otra pagina o a un sitio web 
+https://www.youtube.com/watch?v=lQczRyrQJV8&list=PLJubkp8BnTJtgC2QRHCpvLSWPJNaQv2SI&index=6
+
+<section>
+
+</section>
+<audio src="aqui a fuente"></audio>https://www.youtube.com/watch?v=MawTLnOCr5g&list=PLJubkp8BnTJtgC2QRHCpvLSWPJNaQv2SI&index=9 -->
