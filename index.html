@@ -103,12 +103,6 @@
                 </ul><img id="imagen_steve" src="imgs/steve_lukaker.jpg" alt="steve lukaker">
             </div>
         </section>
-        <section>
-
-        </section>
-
-
-
     </main>
     <footer>
         <img src="imgs/GuitarStyle_negativo_T.png" alt="GuitarStyle">
@@ -118,10 +112,10 @@
 
     <!-- SCRIP PARA LOS LINKs -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var menuItems = document.querySelectorAll('#menu li');
-            menuItems.forEach(function(item) {
-                item.addEventListener('click', function() {
+            menuItems.forEach(function (item) {
+                item.addEventListener('click', function () {
                     var link = this.querySelector('a').getAttribute('href');
                     window.location.href = link;
                 });
