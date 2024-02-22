@@ -1,6 +1,6 @@
 /* Estilos para el contenedor principal */
 body {
-    background-image: url('imgs/guitarras_fondo.png');
+    background-image: url('recursos/guitarras_fondo.png');
     background-size: cover; 
     background-repeat: no-repeat; 
 }
